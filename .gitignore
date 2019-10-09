@@ -5,7 +5,7 @@
 /equation_solver/.fetch
 /equation_solver/erl_crash.dump
 /equation_solver/config/*.secret.exs
-/equation_solver/log/*.*
+/equation_solver/log/
 
 /equation_solver_hall/_build
 /equation_solver_hall/cover
@@ -17,6 +17,6 @@
 *.beam
 /equation_solver_hall/config/*.secret.exs
 /equation_solver_hall/assets/node_modules
-/equation_solver_hall/log/*.*
+/equation_solver_hall/log/
 
 
