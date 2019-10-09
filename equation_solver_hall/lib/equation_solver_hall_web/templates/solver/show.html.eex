@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-xs-8 col-md-4 col-xs-offset-2 col-md-offset-4">
+    <div class="input-group">
+      <input id="solver-url" class="form-control"
+             value="<%= current_solver_url(@conn) %>" readonly>
+      <div class="input-group-btn">
+        <button id="copy-solver-url" class="btn btn-primary"
+                data-clipboard-target="#solver-url">
+          <i class="fa fa-paste"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="solver-container" 
+     data-solver-name="<%= @solver_name %>"
+     data-auth-token="<%= @auth_token %>"
+     data-ws-url="<%= ws_url() %>">
+</div>
+
+<div class="row">
+  <div class="col-xs-8">
+    <div class="form-group">
+      <%= button("New Solver", to: solver_path(@conn, :new), 
+                  method: :get, 
+                  class: "btn btn-primary center-block") %> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Solve Equations</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>-->
+
+
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li>        
+              <%= link "Switch User", 
+                       to: session_path(@conn, :delete), 
+                       method: :delete %>
+            </li>
+          </ul>
+        </nav>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="letters">
+              <span class="letter">E</span>
+              <span class="letter">Q</span>
+              <span class="letter">U</span>
+              <span class="letter">A</span>
+              <span class="letter">T</span>
+              <span class="letter">I</span>
+              <span class="letter">O</span>
+              <span class="letter inverse">N</span>
+              <span class="letter">_</span>
+              <span class="letter">S</span>
+              <span class="letter">O</span>
+              <span class="letter">L</span>
+              <span class="letter">V</span>
+              <span class="letter">E</span>
+              <span class="letter">R</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      
+      <main role="main">
+        <%= render @view_module, @view_template, assigns %>
+      </main>
+
+      <footer>
+        built with 
+        <a href="http://elixir-lang.org/" target="_blank">Elixir</a> + 
+        <a href="http://www.phoenixframework.org/" target="_blank">Phoenix</a> +
+        <a href="https://vuejs.org/" target="_blank">Vue</a>
+        by 
+        <a href="mailto:dmitrij.mdl@gmail.com"   
+           target="_blank">@dmitrij.mdl</a>
+      </footer>
+
+    </div> <!-- /container -->
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
