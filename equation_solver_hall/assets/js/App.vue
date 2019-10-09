@@ -16,8 +16,9 @@
 </template>
 
 <script>
-  import Equation     from './components/Equation.vue'
-  import Solver     from './components/Solver.vue'
+
+  import Equation from './components/Equation.vue'
+  import Solver from './components/Solver.vue'
   //import Users  from './components/Users.vue'
   import { Socket, Presence } from "phoenix"
 

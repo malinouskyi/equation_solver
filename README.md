@@ -4,6 +4,6 @@ A Elixir + Phoenix + Vue programm that solving of quadratic or linear equations.
   To start your Phoenix app:
   - Install dependencies with mix deps.get
   - Install Node.js dependencies with npm install
-  - Start Phoenix endpoint with mix phoenix.server
+  - Start Phoenix endpoint with mix phx.server
   
   Now you can visit localhost:4000 from your browser.
