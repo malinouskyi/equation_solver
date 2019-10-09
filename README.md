@@ -1,5 +1,5 @@
 # equation_solver
-A Elexir + Phoenix + Vue programm that solving of quadratic or linear equations. This is a test item after completing the pragmaticstudio.com course.
+A Elixir + Phoenix + Vue programm that solving of quadratic or linear equations. This is a test item after completing the pragmaticstudio.com course.
 
   To start your Phoenix app:
   - Install dependencies with mix deps.get
