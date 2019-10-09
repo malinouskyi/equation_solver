@@ -16,7 +16,7 @@
 *.ez
 *.beam
 /equation_solver_hall/config/*.secret.exs
-/equation_solver_hall/assets/node_modules
+/equation_solver_hall/assets/node_modules/
 /equation_solver_hall/log/
 
 
